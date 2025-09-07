@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "ap-south-1"
-}
-
 data "aws_ami" "app_ami" {
   most_recent = true
 
@@ -26,4 +22,3 @@ resource "aws_instance" "web" {
     Name = "HelloWorld"
   }
 }
-
